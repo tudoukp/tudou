@@ -1,5 +1,5 @@
 var sign=require("./lib/controllers/sign.js");
-var hall=require('./lib/controllers/hall.js')
+var lobby=require('./lib/controllers/lobby.js')
 
 module.exports=function(app){
 	app.get('/',function(req,res){
@@ -12,5 +12,5 @@ module.exports=function(app){
 	app.get("/register",sign.showRegister)
 	app.post("/register",sign.register)
 
-	app.get('/hall',hall.showHall);
+	app.get('/hall',lobby.showLobby);
 }
