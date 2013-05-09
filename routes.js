@@ -12,5 +12,5 @@ module.exports=function(app){
 	app.get("/register",sign.showRegister)
 	app.post("/register",sign.register)
 
-	app.get('/hall',lobby.showLobby);
+	app.get('/lobby',lobby.showLobby);
 }

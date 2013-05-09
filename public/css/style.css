@@ -1,3 +1,42 @@
-#wrapper{
+body{
 	background: #d0d6db;
 }
+
+#wrapper .container{
+	background:white;
+	box-shadow: 1px 2px 3px #ddd;
+}
+
+.single{
+	padding:3px;
+	border-bottom:1px solid #ddd;
+}
+
+.single:hover{
+	background:#eee;
+}
+
+.user_avatar{
+	float:left;
+
+}
+
+.room_info{
+	float:left;
+	margin-left:10px;
+}
+
+.tools{
+	height:80px;
+}
+
+[class*="span"] {
+  margin-left: 0px;
+}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+
+
+
