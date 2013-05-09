@@ -1,112 +1,81 @@
-<% include header %>
-	
-	<script type="text/javascript" src="/socket.io/socket.io.js" ></script>
-	<div id="wrapper">
-		<div class="container">
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="row-fluid">
-						<div class="span8">
+<!DOCTYPE>
+<html>
+	<head>
+		<title>桌面</title>
+		<script type='text/javascript' src="js/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src='js/jquery.wookmark.js'></script>
+		<style>
+			#rooms{
+				position: relative;
+			}
 
-								<div class="tools">
-									<div>
-										<a class='btn' data-toggle="modal" href="#new_room" >创建房间</a>
-									</div>
-								</div>
-
-
-								<div id='rooms' class="">
-
-										<div class="single clearfix">
-											<div class="span6 clearfix">
-												<div class="user_avatar">
-													<a href="#">
-														<img src="http://www.gravatar.com/avatar/8910b4646b5edbf90e8661efb5eeda88?size=48" />
-													</a>
-												</div>
-												<div class="room_info">
-													<div class="room_title">
-														<p>各位官人来玩玩吧</p>
-													</div>
-													<div class="detail">
-														<span>当前人数：1/2</span>
-														<span>考察内容：-----</span>
-													</div>
-												</div>
-											</div>
-											<div class="span2">
-												<div class="r_enter">
-													<a href="#">进入</a>
-												</div>
-												<div>
-													<span class="badge">1</span>
-													<span class="lock">locak</span>
-												</div>
-											</div>
-										</div>
-
-										<div class="single clearfix">
-											<div class="span6 clearfix">
-												<div class="user_avatar">
-													<a href="#">
-														<img src="http://www.gravatar.com/avatar/8910b4646b5edbf90e8661efb5eeda88?size=48" />
-													</a>
-												</div>
-												<div class="room_info">
-													<div class="room_title">
-														<p>各位官人来玩玩吧</p>
-													</div>
-													<div class="detail">
-														<span>当前人数：1/2</span>
-														<span>考察内容：-----</span>
-													</div>
-												</div>
-											</div>
-											<div class="span2">
-
-											</div>
-										</div>
-
-								</div>
-						
+			#rooms .room{
+				display:inline;
+				width:200px;
+				height:150px;
+				background-color: #ffffff;
+				border: 1px solid #dedede;
+				border-radius: 2px;
+				display: none;
+				cursor: pointer;
+				padding: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='container'>
+			<div id='header'>
+			</div>
+			<div id='rooms'>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
 					</div>
-					<div class="span4">
-							<div class="msg_show">
-								<ul class="unstyles">
-									<li>[系统]:你妹的难道就不能快点开始么</li>
-									<li>[普通]永远的爱:我靠这也可以</li>
-									<li>[普通]雄霸:怎么玩啊</li>
-								</ul>
-							</div>
-							<div class="msg_input">
-
-							</div>
+				</div>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
+					</div>
+				</div>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
+					</div>
+				</div>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
+					</div>
+				</div>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
+					</div>
+				</div>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
+					</div>
+				</div>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
+					</div>
+				</div>
+				<div class='room'>
+					<div>
+						房间1 ，房间二，房间三
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-
-	<div>
-
-		<div id="new_room" class='modal hide fade' style='display:none;'>
-			<div class="modal-header">
-              <a class="close" data-dismiss="modal">×</a>
-              <h4>楚克乌马.阿卡布埃泽的单场技术统计</h4>
-            </div>
-
-			<div class="modal-body">
-                nimeide
-            </div>
-			<div class="modal-footer">
-              <a href="#" class="btn" data-dismiss="modal">关闭</a>
-              <button type="submit" class="btn btn-primary">保存更改</button>
-            </div>
-		</div>
-
-	</div>
-
-	<script type='text/javascript' src='http://wrongwaycn.github.io/bootstrap/docs/assets/js/bootstrap-modal.js'></script>
-	<script type="text/javascript" src='js/xxoo.js'></script>
-<% include footer %>
+		<script type='text/javascript'>
+			$('#rooms .room').wookmark({
+				autoResize: true,
+				offset:2,
+				container:$('#rooms')
+			});
+		</script>
+	</body>
+</html>
